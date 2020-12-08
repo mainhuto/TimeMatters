@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="settings_switch_margin">64dp</dimen>
+    <dimen name="widget_margin">0dp</dimen>
+
+</resources>

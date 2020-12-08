@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        tools:context=".ActivityEntrySettingsActivity">
+
+
+        <EditText
+            android:id="@+id/category_name_pt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/category_name_hint"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:id="@+id/category_color_iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_center_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color_tag_tv"
+            app:srcCompat="@drawable/color_button"
+            android:contentDescription="@string/color_selector_cd" />
+
+        <ImageView
+            android:id="@+id/category_icon_iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/icon_tag_tv"
+            app:srcCompat="@drawable/no_icon_visible"
+            android:contentDescription="@string/icon_selector_cd" />
+
+        <NumberPicker
+            android:id="@+id/hour_picker_np"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:theme="@style/DefaultNumberPickerTheme"
+            app:layout_constraintEnd_toStartOf="@+id/time_separator_tv"
+            app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+        <NumberPicker
+            android:id="@+id/minute_picker_np"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_marginEnd="@dimen/settings_switch_margin"
+            android:theme="@style/DefaultNumberPickerTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hour_picker_np" />
+
+        <TextView
+            android:id="@+id/start_time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/settings_switch_margin"
+            android:text="@string/time_duration_tag"
+            android:textColor="@android:color/primary_text_light"
+            app:layout_constraintBottom_toBottomOf="@+id/hour_picker_np"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/hour_picker_np" />
+
+        <TextView
+            android:id="@+id/time_separator_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_separator"
+            app:layout_constraintBottom_toBottomOf="@+id/hour_picker_np"
+            app:layout_constraintEnd_toStartOf="@+id/minute_picker_np"
+            app:layout_constraintTop_toTopOf="@+id/hour_picker_np" />
+
+        <TextView
+            android:id="@+id/color_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/color_label"
+            android:textColor="@android:color/primary_text_light"
+            app:layout_constraintEnd_toEndOf="@+id/category_color_iv"
+            app:layout_constraintStart_toStartOf="@+id/category_color_iv"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/icon_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/icon_label"
+            android:textColor="@android:color/primary_text_light"
+            app:layout_constraintEnd_toEndOf="@+id/category_icon_iv"
+            app:layout_constraintStart_toStartOf="@+id/category_icon_iv"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_name_pt" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notification_switch" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_center_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/notification_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/settings_switch_margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/settings_switch_margin"
+            android:text="@string/notify_upon_completion_tag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hour_picker_np" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

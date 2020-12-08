@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Time Matters</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_categories">Categories</string>
+    <string name="action_tasks">Tasks</string>
+    <string name="category">Category</string>
+    <string name="task">Task</string>
+
+    <string name="activity_1_name">Fitness</string>
+    <string name="activity_2_name">Study</string>
+    <string name="activity_3_name">Hobbies</string>
+    <string name="activity_4_name">Work</string>
+
+    <string name="no_activities_message">Add an activity to start</string>
+    <string name="select_activity">Select a new activity</string>
+    <string name="need_location_permission_message">To link the activity to a location, you need to enable location permissions first</string>
+    <string name="activity_location_tag">Activity location</string>
+
+    <string name="category_list_title">%1$s Categories</string>
+    <string name="new_category_title">New Category</string>
+    <string name="category_detail_title">Category details</string>
+    <string name="delete_confirmation">%1$s %2$s removed</string>
+    <string name="no_categories_message">No categories have been created for this activity</string>
+    <string name="category_selection_title">Select a Category</string>
+
+    <string name="task_list_title">%1$s Tasks</string>
+    <string name="new_task_title">New Task</string>
+    <string name="task_detail_title">Task details</string>
+    <string name="no_tasks_message">No tasks have been created for this activity</string>
+    <string name="task_name_hint">Task name</string>
+    <string name="task_selection_title">Select a Task</string>
+    <string name="task_in_progress_on_other_activity">There is a task in progress on other activity</string>
+    <string name="go_to_activity">Go to Activity</string>
+
+    <string name="no_task_logs_message">How do you feel today? Ready to start?</string>
+    <string name="no_task_logs_help_1">Below you will find some hints:</string>
+    <string name="no_task_logs_help_2">First, you need to create the categories. Use the option Categories from the menu</string>
+    <string name="no_task_logs_help_3">Second, you need to create the tasks. Use the option Tasks from the menu</string>
+    <string name="no_task_logs_help_4">Finally, use the plus button to start a task</string>
+
+    <string name="start_time_tag">Start time</string>
+    <string name="title_tag">Title</string>
+    <string name="finish_time_tag">Finish time</string>
+    <string name="timetable_tag">Timetable</string>
+    <string name="link_to_location_tag">Link to location</string>
+    <string name="link_to_timetable_tag">Link to timetable</string>
+    <string name="notify_upon_completion_tag">Notify upon completion</string>
+    <string name="rate_task_completed_tag">Rate task completed</string>
+    <string name="location_tag">Location</string>
+    <string name="category_name_hint">Category name</string>
+    <string name="time_duration_tag">Time duration</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="undo_tag">Undo</string>
+    <string name="select_a_category">Select a category</string>
+    <string name="task_name_mandatory">Task title is mandatory</string>
+    <string name="category_mandatory">You need to choose a category</string>
+    <string name="tab_today_text">TODAY</string>
+    <string name="tab_week_text">WEEK</string>
+    <string name="tab_month_text">MONTH</string>
+    <string name="invalid_view_type">\"Invalid view type, value of \"</string>
+    <string name="start_activity_title">Start activity</string>
+    <string name="finish_activity_title">Finish activity</string>
+    <string name="task_time_completed">Task time completed</string>
+    <string name="task_alarm_content_text">%1$s (%2$s)</string>
+    <string name="channel_name">Task completed</string>
+    <string name="channel_description">Task time completed</string>
+    <string name="widget_no_task_in_progress">No task in progress</string>
+    <string name="color_selector_cd">Color selector image</string>
+    <string name="icon_selector_cd">Icon selector</string>
+    <string name="notification_image_cd">Notification image</string>
+    <string name="category_icon_cd">Category icon image</string>
+    <string name="task_icon_cd">Task icon image</string>
+    <string name="alert_icon_cd">Alert icon image</string>
+    <string name="star_image_cd">Rating star image</string>
+    <string name="play_pause_image_cd">Play pause image</string>
+    <string name="stop_image_cd">Stop image</string>
+    <string name="occurrences_image_cd">Occurrences background image</string>
+    <string name="widget_background_cd">Widget background image</string>
+    <string name="time_separator">:</string>
+    <string name="color_label">Color</string>
+    <string name="icon_label">Icon</string>
+    <string name="initial_time_value">00:00</string>
+    <string name="started">Started</string>
+    <string name="current_time_label">Time</string>
+    <string name="task_duration_label">Expected duration</string>
+    <string name="category_name_mandatory">Category name is mandatory</string>
+    <string name="timetable_mandatory">Timetable is mandatory</string>
+    <string name="marker_mandatory">To link this activity to a location, you need to click on the map to set a marker</string>
+
+    <plurals name="task_delete_not_allowed">
+        <item quantity="one">%1$s %2$s is assigned to %3$d task log entry. Cannot be remove</item>
+        <item quantity="other">%1$s %2$s is assigned to %3$d task log entries. Cannot be remove</item>
+    </plurals>
+    <plurals name="category_delete_not_allowed">
+        <item quantity="one">%1$s %2$s is assigned to %3$d task. Cannot be removed</item>
+        <item quantity="other">%1$s %2$s is assigned to %3$d tasks. Cannot be removed</item>
+    </plurals>
+
+</resources>

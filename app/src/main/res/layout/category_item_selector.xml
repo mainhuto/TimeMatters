@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category_item_cl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/degraded"
+    android:paddingEnd="8dp">
+
+    <ImageView
+        android:id="@+id/category_icon_iv"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sports_rugby_black_24dp"
+        android:contentDescription="@string/category_icon_cd" />
+
+    <TextView
+        android:id="@+id/category_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/category_icon_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/category_icon_iv"
+        app:layout_constraintTop_toTopOf="@+id/category_icon_iv"
+        tools:text="Sport games" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_icon_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

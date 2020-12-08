@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/task_dialog_icon_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/no_icon_visible"
+        android:contentDescription="@string/task_icon_cd" />
+
+    <TextView
+        android:id="@+id/task_dialog_name_tv"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:textColor="@android:color/primary_text_light"
+        tools:text="Rugby Match"
+        app:layout_constraintBottom_toBottomOf="@+id/task_dialog_icon_iv"
+        app:layout_constraintStart_toEndOf="@+id/task_dialog_icon_iv"
+        app:layout_constraintTop_toTopOf="@+id/task_dialog_icon_iv" />
+
+    <TextView
+        android:id="@+id/start_time_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/time_duration_tag"
+        android:textColor="@android:color/primary_text_light"
+        app:layout_constraintBottom_toBottomOf="@+id/hour_picker_np"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hour_picker_np" />
+
+    <NumberPicker
+        android:id="@+id/hour_picker_np"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:theme="@style/DefaultNumberPickerTheme"
+        app:layout_constraintEnd_toStartOf="@id/time_separator_tv"
+        app:layout_constraintStart_toEndOf="@+id/start_time_textView"
+        app:layout_constraintTop_toBottomOf="@id/task_dialog_icon_iv" />
+
+    <TextView
+        android:id="@+id/time_separator_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_separator"
+        app:layout_constraintBottom_toBottomOf="@id/hour_picker_np"
+        app:layout_constraintEnd_toStartOf="@id/minute_picker_np"
+        app:layout_constraintTop_toTopOf="@id/hour_picker_np" />
+
+    <NumberPicker
+        android:id="@+id/minute_picker_np"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:theme="@style/DefaultNumberPickerTheme"
+        app:layout_constraintTop_toTopOf="@id/hour_picker_np"
+        app:layout_constraintStart_toEndOf="@+id/time_separator_tv"
+        tools:layout_editor_absoluteX="170dp" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/notification_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/notify_upon_completion_tag"
+        app:layout_constraintEnd_toEndOf="@+id/minute_picker_np"
+        app:layout_constraintStart_toStartOf="@+id/start_time_textView"
+        app:layout_constraintTop_toBottomOf="@id/hour_picker_np" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
