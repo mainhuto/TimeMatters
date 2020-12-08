@@ -48,6 +48,7 @@
                 android:layout_height="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="22dp"
+                android:contentDescription="@string/point_image"
                 app:srcCompat="@drawable/point" />
 
             <TextView
@@ -72,6 +73,7 @@
                 android:layout_height="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="22dp"
+                android:contentDescription="@string/point_image"
                 app:srcCompat="@drawable/point" />
 
             <TextView
@@ -95,6 +97,7 @@
                 android:layout_height="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="22dp"
+                android:contentDescription="@string/point_image"
                 app:srcCompat="@drawable/point" />
 
             <TextView

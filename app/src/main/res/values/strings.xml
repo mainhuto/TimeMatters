@@ -88,6 +88,7 @@
     <string name="timetable_mandatory">Timetable is mandatory</string>
     <string name="marker_mandatory">To link this activity to a location, you need to click on the map to set a marker</string>
     <string name="plus_image">Plus image</string>
+    <string name="point_image">Point image</string>
 
     <plurals name="task_delete_not_allowed">
         <item quantity="one">%1$s %2$s is assigned to %3$d task log entry. Cannot be remove</item>

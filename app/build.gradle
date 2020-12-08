@@ -17,10 +17,10 @@ android {
 
     signingConfigs {
         release {
-            keyAlias 'key023NotReal'
-            keyPassword 'key8340NotReal'
+            keyAlias 'key0'
+            keyPassword 'frew-67ouh'
             storeFile file('../storeFile.jks')
-            storePassword 'A3e-ee87fNotReal'
+            storePassword 'Gfj765ss'
         }
     }
 
